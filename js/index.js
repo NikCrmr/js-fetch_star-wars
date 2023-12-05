@@ -45,6 +45,10 @@ async function fetchDataAndRender() {
   const response = await fetch("https://swapi.dev/api/people");
   const data = await response.json();
   console.log(data);
+
+  data.forEach((results) => {
+    Card();
+  });
   // ?
 }
 
@@ -71,4 +75,8 @@ The following hints may guide you:
 - What was the array method again to perform an action **for each** element?
 - You can use the functions `Card()` and `renderElement()` to create those cards, see the explanation above!
 
-Please switch to the [`js/index.js`](./js/index.js) file to start counting! */
+Please switch to the [`js/index.js`](./js/index.js) file to start counting! 
+
+
+
+*/
